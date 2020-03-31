@@ -24,13 +24,13 @@ nav
 	margin: 0
 	list-style-type: none
 
-	.menu_link
+	&_link
 		color: #ffffff
 		font-size: 16px
 		font-weight: 300
 		text-shadow: 2px 2px 2px darkgrey
 
-	.menu_item
+	&_item
 		border-right: 2px dotted darkslategrey
 		padding-right: 15px
 
@@ -43,26 +43,26 @@ nav
 	border-bottom: 10px solid rgba(0, 0, 0, 0.06)
 	border-bottom-left-radius: 3px
 
-	.subheader_logo
+	&_logo
 		display: block
 		max-width: 100%
 		margin-top: 20px
 
-	.subheader_official
+	&_official
 		margin-top: 6px
 		opacity: 0.5
 		color: #ffffff
 		font-size: 13px
 		font-weight: 400
 
-	.subheader_call
+	&_call
 		color: #ffffff
 		font-size: 12px
 		font-weight: 300
 		margin-top: 28px
 		text-align: right
 
-	.subheader_phone
+	&_phone
 		display: block
 		margin-top: 8px
 		color: white
@@ -129,6 +129,7 @@ nav
 		text-shadow: 3px 2px 2px darkslategrey
 		font-size: 18px
 		font-weight: 400
+		transition: 0.4s
 		+btn_hover
 
 .reasons
@@ -239,6 +240,7 @@ nav
 				width: 14px
 				height: 2px
 				background-color: $main-color
+				transition: 1s
 			&::after
 				content: ''
 				position: absolute
@@ -247,6 +249,7 @@ nav
 				height: 14px
 				width: 2px
 				background-color: $main-color
+				transition: 1s
 			&:hover
 				&::before, &::after
 					background-color: $second-color
@@ -274,6 +277,23 @@ nav
 		font-weight: 400
 		text-align: center
 		line-height: 30px
+
+
+.conditions
+	padding: 68px 0 84px 0
+
+	&_block
+		padding-top: 35px
+	
+	&_title
+		color: $main-color
+		font-size: 22px
+		font-weight: 600
+		text-align: center
+
+	&_list
+		font-size: 17px
+		padding-top: 15px
 
 .footer img
 	width: 1900px
