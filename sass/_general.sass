@@ -24,8 +24,11 @@ nav
 			text-decoration: none
 			color: $main-color
 	&_item
-		border-right: 2px dotted black
+		border-right: 2px dotted grey
 		padding-right: 18px
+		&:last-child
+			border-right: none
+
 
 .subheader
 	position: absolute
@@ -119,6 +122,33 @@ nav
 
 .reasons
 	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: $main-color
+		border-radius: 100%
+	&_descr
+		width: 343px
+	&_subtitle
+		line-height: 21px
+		color: $main-color
+		font-size: 18px
+		font-weight: 500
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
+		margin-top: 10px
 
 .label
 	position: relative
@@ -164,34 +194,6 @@ nav
 	z-index: 2
 	&_white 
 		color: #fff
-
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 35px
-	.reasons_round
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-right: 26px
-		width: 113px
-		height: 113px
-		background-color: $main-color
-		border-radius: 100%
-	.reasons_descr
-		width: 343px
-		.reasons_subtitle
-			line-height: 21px
-			color: $main-color
-			font-size: 18px
-			font-weight: 500
-		.reasons_text
-			color: #202020
-			font-size: 15px
-			font-weight: 300
-			line-height: 21px
-			margin-top: 10px
 	
 .mobile 
 	min-height: 864px
