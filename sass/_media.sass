@@ -197,6 +197,7 @@
     .xs-visible
         display: block
     .subheader
+        height: 95px
         &_phone
             display: block
             color: white
@@ -292,8 +293,83 @@
     .world
         .title
             font-size: 30px
-    
 
-
-                    
-                    
+@media (max-width: 575px)
+    .label
+        width: 240px
+    .subheader
+        height: 64px
+        &_official
+            display: none
+        &_logo
+            margin-top: 19px
+            img
+                width: 104%
+                height: 14px
+        &_phone
+            font-size: 11px
+            margin-top: 10px
+        &_btn
+            width: 118px
+            height: 22px
+            font-size: 9px
+            margin-top: -3px
+    .promo
+        padding-top: 96px
+        min-height: 400px
+        &_header
+            font-size: 26px
+            font-weight: 600
+            line-height: 30px
+            padding: 0 24px
+        &_subheader
+            font-size: 19px
+            font-weight: 500
+        &_descr
+            display: none
+        &_btn
+            margin-top: 50px
+            width: 210px
+            height: 50px
+            font-size: 15px
+    .reasons
+        padding: 30px 0 30px 0
+        .title
+            font-size: 22px
+            margin-top: 20px
+        &_round
+            width: 100px
+            height: 100px
+            margin: 0 auto
+        &_block
+            margin-top: 20px
+        &_descr
+            width: 99%
+        &_subtitle
+            line-height: 20px
+            font-size: 16px
+        &_text
+            font-size: 13px
+            line-height: 19px
+            margin-top: 10px
+    .mobile
+        padding-bottom: 10px
+        .row
+            margin-top: 14px
+        .title
+            font-size: 22px
+            margin-top: 20px
+        &_item
+            width: 86%
+            height: 180px
+            margin-bottom: 20px
+            border-radius: 18px
+            padding-top: 50px
+            &_subtitle
+                font-size: 17px
+                line-height: 25px
+                text-align: center
+        .subtitle
+            font-size: 15px
+            margin-top: 10px
+            margin-bottom: 10px
